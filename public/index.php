@@ -1,19 +1,13 @@
 <?php
 
+use App\Sorts\BubbleAbstractSort;
+use App\Sorts\QuickSort;
+use App\Sorts\ShakerSort;
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-
-
-/* function req()
-{
-    echo 1;
-    req();
-}
-
-req(); */
 
 /*
 |--------------------------------------------------------------------------
@@ -53,6 +47,7 @@ require __DIR__.'/../vendor/autoload.php';
 */
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
+
 
 $kernel = $app->make(Kernel::class);
 
